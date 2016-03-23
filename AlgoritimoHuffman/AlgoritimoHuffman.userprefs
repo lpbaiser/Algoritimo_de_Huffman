@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AlgoritimoHuffman/Arvore/Arvore.cs">
+    <Files>
+      <File FileName="AlgoritimoHuffman/Program.cs" Line="8" Column="3" />
+      <File FileName="AlgoritimoHuffman/Arquivo/ManipulaArquivo.cs" Line="3" Column="1" />
+      <File FileName="AlgoritimoHuffman/Arvore/Arvore.cs" Line="17" Column="16" />
+      <File FileName="AlgoritimoHuffman/Arvore/Node.cs" Line="20" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
