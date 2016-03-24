@@ -40,7 +40,7 @@ namespace AlgoritimoHuffman{
 		neste método foi implementado uma lógica que faz a cópia dos dados para uma estrutura
 		que comporta os dados dentro de uma lista, assim podemos ordenar os dados pelo valor do dicionário.
 		*/
-		public Dictionary<char,int>ordenaDictionary(Dictionary<char, int> dict){
+		public Dictionary<char,int>sortDictionary(Dictionary<char, int> dict){
 
 			//Cria um novo dictionary para a cópia dos dados 
 			Dictionary<char, int> sortedCharacters = new Dictionary<char, int> ();
