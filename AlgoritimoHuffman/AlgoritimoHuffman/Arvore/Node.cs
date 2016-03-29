@@ -7,6 +7,7 @@ namespace AlgoritimoHuffman{
 		//Atributos
 		private int peso;
 		private char caracter;
+
 		private Node noEsquerda;
 		private Node noDireita;
 
