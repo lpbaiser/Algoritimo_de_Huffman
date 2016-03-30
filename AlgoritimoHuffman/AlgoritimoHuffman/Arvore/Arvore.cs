@@ -7,10 +7,11 @@ namespace AlgoritimoHuffman{
 	public class Arvore{
 
 		private List<Node> nodes;
-		private Dictionary<char, int> caracteres;
+		private Dictionary<char, String> hashCaminhos;
 
 		public Arvore ()
 		{
+			hashCaminhos = new Dictionary<char, String> ();
 		}
 		/*
 		 * Este método faz a contrução da arvore binária, seus nós intermediários armazenam
@@ -82,8 +83,14 @@ namespace AlgoritimoHuffman{
 			}
 		}
 		public void criaTabela(Node n, String caminho){
-			
-		
+			if (n.NoDireita == null && n.NoEsquerda == null) {
+				hashCaminhos.Add (n.Caracter, caminho);
+				return;
+			} else {
+				criaTabela (n.NoEsquerda, caminho + "0");
+				criaTabela (n.NoDireita, caminho + "1");
+
+			}
 		}
 	}
 }
