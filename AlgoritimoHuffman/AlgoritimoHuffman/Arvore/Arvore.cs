@@ -7,6 +7,7 @@ namespace AlgoritimoHuffman{
 	public class Arvore{
 
 		private List<Node> nodes;
+		private Dictionary<char, int> caracteres;
 
 		public Arvore ()
 		{
@@ -79,6 +80,10 @@ namespace AlgoritimoHuffman{
 				}
 				inOrder (root.NoDireita);
 			}
+		}
+		public void criaTabela(Node n, String caminho){
+			
+		
 		}
 	}
 }
