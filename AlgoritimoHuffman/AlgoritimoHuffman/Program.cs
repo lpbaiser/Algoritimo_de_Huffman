@@ -10,8 +10,8 @@ namespace AlgoritimoHuffman
 
 
 			ManipulaArquivo mp = new ManipulaArquivo ();
-			Dictionary<char, int> caracteres = mp.lerArquivo ("/home/leonardo/Dropbox/LP/Aps1/test.txt");
-
+			Dictionary<char, int> caracteres = mp.lerArquivo ("/Dados/Documents/NetBeansProjects/Algoritmo_de_Huffman/Algoritimo_de_Huffman/test.txt");
+			String frase = mp.Texto;
 			Console.WriteLine ("### characters! ###");
 			foreach (var item in caracteres) {
 				if (item.Value.Equals(' ')) {
@@ -19,6 +19,7 @@ namespace AlgoritimoHuffman
 				}
 				//Console.WriteLine ("caracter", item, "freq: ", caracteres[item])/;
 				Console.WriteLine ("caracter = {0}, freq = {1}", item.Key, item.Value);
+			
 			}
 
 			caracteres = mp.sortDictionary (caracteres);
@@ -40,6 +41,29 @@ namespace AlgoritimoHuffman
 			Node root = tree.buildTree (caracteres);
 			Console.WriteLine ("root =  {0}\n", root.Peso);
 			tree.inOrder (root);
+
+			Dictionary<char, String> hash = tree.HashCaminhos;
+			tree.criaTabela(root,"");
+			Console.WriteLine ("\n Tabela \n");
+
+
+			Console.WriteLine ("\n Esp   -->"+hash[' ']);
+			Console.WriteLine ("\n e     -->"+hash['e']);
+			Console.WriteLine ("\n s     -->"+hash['s']);
+			Console.WriteLine ("\n b     -->"+hash['b']);
+			Console.WriteLine ("\n o     -->"+hash['o']);
+			Console.WriteLine ("\n m     -->"+hash['m']);
+
+			Data data = new Data (tree, frase);
+			Serializa s = new Serializa ();
+			s.Serializar (data);
+
+
+			Data newdata = s.Desserializar();
+
+			String newFrase = newdata.descompacta();
+			Serializa s1 = new Serializa ("/Dados/Documents/NetBeansProjects/Algoritmo_de_Huffman/Algoritimo_de_Huffman/Arquivo_Descomp.txt");
+			s1.SerializarString (newFrase);
 
 		}
 	}

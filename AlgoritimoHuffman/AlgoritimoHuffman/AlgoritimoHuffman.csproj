@@ -41,6 +41,8 @@
     <Compile Include="Arvore\Node.cs" />
     <Compile Include="Arvore\SimpleNode.cs" />
     <Compile Include="Arvore\FullNode.cs" />
+    <Compile Include="Arquivo\Serializa.cs" />
+    <Compile Include="Arquivo\Data.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

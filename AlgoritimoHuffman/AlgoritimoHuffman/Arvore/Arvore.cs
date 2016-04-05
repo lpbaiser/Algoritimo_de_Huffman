@@ -4,19 +4,31 @@ using System.Collections;
 using System.Linq;
 
 namespace AlgoritimoHuffman{
+	[Serializable]
 	public class Arvore{
 
 		private List<Node> nodes;
-		private Dictionary<char, String> hashCaminhos;
+		[NonSerialized] private Dictionary<char, String> hashCaminhos;
+		//private String data;
 
 		public Arvore ()
 		{
 			hashCaminhos = new Dictionary<char, String> ();
 		}
+
+		public List<Node> Nodes {
+			get {
+				return this.nodes;
+			}
+			set {
+				nodes = value;
+			}
+		}
 		/*
 		 * Este método faz a contrução da arvore binária, seus nós intermediários armazenam
 		 * a soma peso dos nós filhos, os nós folhas armazenam um caracter.
 		*/
+
 		public Node buildTree(Dictionary<char, int> dict){
 			this.nodes = createNodes (dict);
 
@@ -82,6 +94,16 @@ namespace AlgoritimoHuffman{
 				inOrder (root.NoDireita);
 			}
 		}
+
+		public Dictionary<char, String> HashCaminhos{
+			get {
+				return this.hashCaminhos;
+			}
+			set {
+				hashCaminhos = value;
+			}
+		}
+
 		public void criaTabela(Node n, String caminho){
 			if (n.NoDireita == null && n.NoEsquerda == null) {
 				hashCaminhos.Add (n.Caracter, caminho);

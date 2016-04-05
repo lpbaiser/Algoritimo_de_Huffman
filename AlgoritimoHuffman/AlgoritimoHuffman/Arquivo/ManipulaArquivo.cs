@@ -6,8 +6,11 @@ using System.Linq;
 namespace AlgoritimoHuffman{
 	public class ManipulaArquivo{
 
+		private String texto;
+
 		public ManipulaArquivo ()
 		{
+			texto = "";
 
 		}
 		/*
@@ -22,7 +25,7 @@ namespace AlgoritimoHuffman{
 			using (var arquivo = new FileStream(path, FileMode.Open, FileAccess.Read)) {
 				while (arquivo.CanRead && arquivo.Position < arquivo.Length) {
 					char caracter = (char)arquivo.ReadByte ();
-
+					texto += caracter;
 					if (!caracteres.ContainsKey (caracter)) {
 						caracteres.Add (caracter, 1);
 					} else {
@@ -54,6 +57,15 @@ namespace AlgoritimoHuffman{
 			}
 
 			return sortedCharacters;
+		}
+
+		public string Texto {
+			get {
+				return this.texto;
+			}
+			set {
+				texto = value;
+			}
 		}
 	}
 }

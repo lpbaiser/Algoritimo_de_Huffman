@@ -1,7 +1,7 @@
 using System;
 
 namespace AlgoritimoHuffman{
-
+	[Serializable]
 	public class Node{
 
 		//Atributos
