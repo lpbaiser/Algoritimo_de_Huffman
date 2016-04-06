@@ -1,0 +1,5 @@
+/data/Documents/NetBeansProjects/Algoritmo_de_Huffman/Algoritimo_de_Huffman/AlgoritimoHuffman/AlgoritimoHuffman/obj/x86/Release/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/data/Documents/NetBeansProjects/Algoritmo_de_Huffman/Algoritimo_de_Huffman/AlgoritimoHuffman/AlgoritimoHuffman/bin/Release/AlgoritimoHuffman.exe.mdb
+/data/Documents/NetBeansProjects/Algoritmo_de_Huffman/Algoritimo_de_Huffman/AlgoritimoHuffman/AlgoritimoHuffman/bin/Release/AlgoritimoHuffman.exe
+/data/Documents/NetBeansProjects/Algoritmo_de_Huffman/Algoritimo_de_Huffman/AlgoritimoHuffman/AlgoritimoHuffman/obj/x86/Release/AlgoritimoHuffman.exe
+/data/Documents/NetBeansProjects/Algoritmo_de_Huffman/Algoritimo_de_Huffman/AlgoritimoHuffman/AlgoritimoHuffman/obj/x86/Release/AlgoritimoHuffman.exe.mdb
