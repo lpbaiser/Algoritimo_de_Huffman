@@ -1,4 +1,4 @@
-# Algoritimo_de_Huffman
+#Algoritimo de Huffman
 Implementação do algoritimo de Huffman, compactação e descompactação em C#
 
 ###Passos###
