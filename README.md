@@ -46,3 +46,7 @@ Implementação do algoritimo de Huffman, compactação e descompactação em C#
 		  inserir em uma lista.
 
 	5.3 - Imprimir os caracteres.	
+	
+Atividade Prática Supervisionada </br>
+Disciplina:Linguagem de Progamação </br>
+Curso: Ciência da Computação - UTFPR-CM </br>
